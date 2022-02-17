@@ -1,7 +1,8 @@
 import requests
+from time import sleep
 
 print('''website http codes:
-200 = OK (Regular)
+200 = OK (bra)
 400 = Bad Request
 403 = Forbidden
 404 = Not Found
@@ -31,4 +32,12 @@ elif response.status_code == 503:
 else:
     print("http code not defined")
 
-
+user_input = input("Do you want to check the website status repeatedly? (This may cause lag on low-end devices), (Y/N)\n")
+if user_input == "y".lower():
+    print("Starting now... 3. 2. 1. ")
+    sleep(3)
+    while True:
+        for i in range(1000):
+            print(i, response.status_code)
+elif user_input == "n".lower():
+    quit()
