@@ -2,7 +2,7 @@ import requests
 from time import sleep
 
 print('''website http codes:
-200 = OK (bra)
+200 = OK (Regular)
 400 = Bad Request
 403 = Forbidden
 404 = Not Found
