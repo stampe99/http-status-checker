@@ -9,5 +9,5 @@ change the website.domain to whatever website you want to check
 ### js
 
 ```cd your-project```
-```js npm i```
-```js node file.js```
+```npm i```
+```node file.js```
